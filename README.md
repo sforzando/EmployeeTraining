@@ -2,7 +2,7 @@
 
 Employee training documents for sforzando LLC. and Inc.
 
-## Requirement
+## Requirements
 
 - Keynote
 - Visual Studio Code
