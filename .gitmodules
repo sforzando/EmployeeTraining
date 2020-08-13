@@ -1,0 +1,3 @@
+[submodule "etude-GCP"]
+	path = etude-GCP
+	url = https://github.com/sforzando/etude-GCP.git
