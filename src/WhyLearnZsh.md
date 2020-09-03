@@ -18,7 +18,7 @@ marp: true
 - 実践
   - 環境を整える
   - CLIに触れてみる
-  - 便利さを感じる
+  - 演習
 
 ---
 
@@ -31,17 +31,17 @@ marp: true
 ## なぜ Zsh を利用するか
 
 - GUIアプリケーションにはない便利なツール（コマンド）があるため
-- ↑ さらに、GUIアプリケーションよりCLIの方が効率的な作業ができるケースがあるため
+  - ↑ さらに、GUIアプリケーションよりCLIの方が効率的な作業ができるケースがあるため
 - CLIを起点として、開発に必要になる技術／ツールを利用できるため
 - 手順などをテキストとして表すことできるため
-- ↑ 言い換えれば、CLI環境の自動化はGUIの自動化よりも簡単なため
+  - ↑ 言い換えれば、CLI環境の自動化はGUIの自動化よりも簡単なため
 - ドキュメントに残せることで、その作業についての属人性をなくし、常に作業を共有／引継ぎできるようになるため
-- → GitHubのREADME.mdなどのドキュメントにしやすい
-  - e.g. https://github.com/sforzando/marziale/blob/master/README.md
+  - → GitHubのREADME.mdなどのドキュメントにしやすい
+  - e.g. <https://github.com/sforzando/marziale/blob/master/README.md>
 
 ---
 
-## Zsh って？
+## Zsh とは
 
 - [Z Shell - Wikipedia](https://ja.wikipedia.org/wiki/Z_Shell)
 - CLI（Command Line Interface）で扱えるシェルのひとつ
@@ -52,7 +52,9 @@ marp: true
 ## Zsh 実践
 
 ### 環境を整えよう
-**iTerm2**
+
+#### iTerm2
+
 - まず設定しておくと良さそうなところ
   - Keys > Hotkey（→ すぐにCLIを開けるようにしたい）
   - Profiles > Terminal（→ 操作ログは遡れるようにしたい）
@@ -64,9 +66,10 @@ marp: true
 
 ---
 
-**Prezto**
+#### Prezto
+
 - Zsh を便利するためのフレームワーク
-  - プロンプトの見た目や、コマンドショートカットなど、用意されているものを利用するだけで、必要十分な恩恵が得られると思う
+  - プロンプトの見た目やコマンドショートカットなど、用意されているものを利用するだけで、必要十分な恩恵が得られる
 - インストールしよう
   - cf. [sorin-ionescu/prezto: The configuration framework for Zsh](https://github.com/sorin-ionescu/prezto)
 
@@ -104,7 +107,8 @@ marp: true
 
 ---
 
-**peco, ghq + peco**
+#### peco, ghq + peco
+
 - コマンド履歴を一覧し、そこから実行する
   - cf. [peco で zsh のコマンド履歴検索を超快適にする！ - Qiita](https://qiita.com/shepabashi/items/f2bc2be37a31df49bca5)
 - gitのリポジトリを素早く開く
@@ -113,6 +117,7 @@ marp: true
 ---
 
 ### CLI で操作してみよう
+
 - [zsh: The Z Shell Manual](http://zsh.sourceforge.net/Doc/Release/index.html)
 - [Mac ターミナルの基本的な使い方・操作方法（１） / Web Design Leaves](https://www.webdesignleaves.com/pr/plugins/mac_terminal_basics_01.html)
   - ターミナル操作についてはこちらがわかりやすい（← ただし、bash）
@@ -139,6 +144,7 @@ marp: true
 ---
 
 ### よく使うコマンドをピックアップ
+
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
   - 高機能grep（grep+findなイメージ）
     - grep - 文字列検索
@@ -177,6 +183,6 @@ marp: true
 ## やってみよう
 
 - 次の条件を満たすフォルダ、ファイルを用意できる
-  - 100個のフォルダを用意し、それぞれ`AAA`, `AAB`,,`ABA`, `ABB`,,のフォルダ名が付けられている
+  - 100個のフォルダを用意し、それぞれ`AAA`, `AAB`, … ,`AAZ`, `ABA`, … とフォルダ名が付けられている
   - それぞれのフォルダの中に100個のファイルが入っている
-  - `AAA` のフォルダには `AAA-00000.txt` ,,, `AAA-00099.txt` という名前のファイルが入っている
+  - `AAA` のフォルダには `AAA-00000.txt`, … , `AAA-00099.txt` という名前のファイルが入っている
