@@ -5,8 +5,6 @@ Employee training documents for sforzando LLC. and Inc.
 ## Requirements
 
 - Keynote
-- Visual Studio Code
-  - [Marp for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
 
 ## Font
 
@@ -16,8 +14,17 @@ Extract `./font/*.tar.xz` .
 find ./ -type f -name "*.tar.xz" -exec tar Jxvf {} \;
 ```
 
-## Export PDF from .md
+## Export presentation documents from Markdown files
 
-1. Open Markdown File with Visual Studio Code.
-1. Open Command Palette and run `Marp: Export slide deck..` .
-1. then PDF exported.
+### In GitHub Actions automatically
+
+Download from Artifacts on Actions.
+![Download from Artifacts](https://user-images.githubusercontent.com/40506652/92154491-d40b4180-ee60-11ea-99e9-0565f3bacc3f.png)
+
+### In VS Code manually
+
+1. Install extension of Marp for VS Code
+   - [Marp for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+1. Open Markdown File with Visual Studio Code
+1. Open Command Palette and run `Marp: Export slide deck..`
+1. then presentation document exported
