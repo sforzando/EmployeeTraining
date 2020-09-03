@@ -17,8 +17,3 @@ jobs:
       with:
         name: Slide-documents
         path: src/*.pdf
-    - name: Store slide documents
-      uses: actions/download-artifact@v2
-      with:
-        name: Slide-documents
-        path: src
