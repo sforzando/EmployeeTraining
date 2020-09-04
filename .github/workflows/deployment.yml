@@ -1,0 +1,19 @@
+name: Deployment for presentation documents
+
+on: [ workflow_dispatch, push ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+    - name: Deploy slide documents with Marp
+      run: npx @marp-team/marp-cli -I ./src --pdf
+    - name: Upload slide documents
+      uses: actions/upload-artifact@v2
+      with:
+        name: Slide-documents
+        path: src/*.pdf
